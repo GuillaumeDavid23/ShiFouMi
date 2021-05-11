@@ -129,11 +129,13 @@ const points = (count) =>{
 function countTotal(total){
     if (total == 1){
         win.classList.remove("d-none");
+        
         document.getElementById("applause").play();
         launch.disabled = true;
         resetbtn.classList.remove("d-none");
     }
     else if (total == 2){
+        
         lose.classList.remove("d-none");
         launch.disabled = true;
         resetbtn.classList.remove("d-none");
