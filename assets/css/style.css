@@ -1,0 +1,109 @@
+body {
+    background-image: url("../img/back.png");
+    background-size: cover;
+    font-family: 'New Tegomin', serif;
+    height: 100vh;
+    position: relative;
+}
+
+/* TITRE */
+.title {
+    font-family: 'New Tegomin', serif;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff,
+        1px 1px 20px #141414;
+    color: rgb(46, 130, 179);
+}
+
+
+/* COMPTEUR DE POINTS */
+.countPoints{
+    font-family: 'New Tegomin', serif;
+    justify-content: space-evenly;
+}
+
+/* BLOC DES IMAGES */
+.battle{
+    justify-content: space-evenly;
+}
+/* RESULTAT RAPIDE */
+.result{
+    font-size: 1.7em;
+    font-weight: bold;
+    color: white;
+}
+/* SELECTION UTILISATEUR */
+.choice select{
+    width: 15rem;
+    height: 3rem;
+    background-color: rgb(46, 130, 179) ;
+    color:white;
+    font-size : 1.5rem;
+    border-radius: 5px;
+}
+
+.choice select:hover{
+    background-color: rgb(28, 99, 139) ;
+}
+
+/* BLOC DES BOUTONS */
+.button{
+    justify-content: space-evenly;
+}
+
+/* BOUTON CHIFOUMI */
+#launch{
+    width: 12rem;
+    height: 4rem;
+    background-color: teal;
+    color: white;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 15px;
+    font-family: 'New Tegomin', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transform: scale(1);
+    transition: 0.5s;
+}
+#launch:hover{
+    background-color: rgb(2, 97, 97);
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+/* BOUTON RESET */
+#reset{
+    text-align: center;
+    width: 10rem;
+    height: 3rem;
+    background-color: teal;
+    color: white;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 15px;
+    font-family: 'New Tegomin', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+#reset:hover{
+    background-color: rgb(2, 97, 97);
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+audio{
+    display: none;
+}
+
+#sound{
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}

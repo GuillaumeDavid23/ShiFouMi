@@ -1,0 +1,41 @@
+.imgBattle{
+    width: 130px;
+}
+:root{
+    font-size: 11px;
+}
+@media (min-width : 576px) {
+    .imgBattle{
+        width: 150px;
+    }
+    :root{
+        font-size: 13px;
+    }
+}
+
+@media (min-width : 768px) {
+    .imgBattle{
+        width: 200px;
+    }
+    :root{
+        font-size: 15px;
+    }
+}
+
+@media (min-width : 992px) {
+    .imgBattle{
+        width: 250px;
+    }
+    :root{
+        font-size: 17px;
+    }
+}
+@media (min-width : 1200px) {
+    .imgBattle{
+        width: 300px;
+    }
+    :root{
+        font-size: 20px;
+    }
+}
+
