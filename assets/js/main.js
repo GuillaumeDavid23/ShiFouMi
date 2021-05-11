@@ -117,7 +117,7 @@ const points = (count) =>{
     }
     else if (count == 2){
         pcPoints++;
-        $('#pcPoints').html(`VOUS : ${pcPoints}`);
+        $('#pcPoints').html(`PC : ${pcPoints}`);
         if (pcPoints == 3){
             return 2;
         }
