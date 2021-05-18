@@ -98,10 +98,12 @@ body {
     transition: 0.5s;
 }
 
+/* Desactiver les sons */
 audio{
     display: none;
 }
 
+/* Bouton son */
 #sound{
     position: absolute;
     bottom: 0;
