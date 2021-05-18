@@ -9,9 +9,9 @@ var pcImage = document.getElementById("imgPC");
 var soundImg = document.getElementById("sound");
 
 //DECLARATION DES IMAGES
-var pierreImg = "assets/img/pierre.jpg"
-var feuilleImg = "assets/img/feuille.jpg"
-var ciseauxImg = "assets/img/ciseaux.jpg"
+var pierreImg = "assets/img/diamant.png"
+var feuilleImg = "assets/img/feuille.png"
+var ciseauxImg = "assets/img/ciseaux.png"
 var sound = "assets/img/sound.png"
 var muted = "assets/img/muted.png"
 

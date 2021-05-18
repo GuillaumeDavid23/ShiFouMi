@@ -31,6 +31,9 @@ body {
 .battle{
     justify-content: space-evenly;
 }
+#imgPC{
+    transform: scaleX(-1);
+}
 /* RESULTAT RAPIDE */
 .result{
     font-size: 1.7em;
@@ -49,11 +52,6 @@ body {
 
 .choice select:hover{
     background-color: rgb(28, 99, 139) ;
-}
-
-/* BLOC DES BOUTONS */
-.button{
-    justify-content: space-evenly;
 }
 
 /* BOUTON CHIFOUMI */
