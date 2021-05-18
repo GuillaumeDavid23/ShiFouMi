@@ -33,9 +33,9 @@ body {
 }
 #playText:hover{
     color: chocolate;
-    
 }
 #playText{
+    color: cyan;
     font-size: 2.5rem;
     text-decoration: none;
 }
