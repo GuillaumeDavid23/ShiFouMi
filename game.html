@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+
+    <!-- Icône -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <title>Javascript - ChiFouMi !</title>
+</head>
+<body>
+
+    <!-- Conteneur principal -->
+    <div class="container h-100 position-relative d-flex flex-column justify-content-center">
+        <!-- COMPTEUR DE POINTS -->
+        <div class="row countPoints mt-2">
+            <div class="pointsLeft">
+                <h2 id="userPoints">VOUS : 0</h2>
+            </div>
+            <div class="pointsRight">
+                <h2 id="pcPoints">PC : 0</h2>
+            </div>
+        </div>
+
+        <!-- IMAGES DES CHOIX IA/USER -->
+        <div class="row battle mb-3">
+            <div>
+                <img id="imgUser" class="imgBattle" src="assets/img/pokePierre.png" alt="Image du combat">
+            </div>
+            <div>
+                <img id="imgPC" class="imgBattle" src="assets/img/pokePierre.png" alt="Image du combat">
+            </div>
+        </div>
+
+        <!-- RESULTAT RAPIDE -->
+        <div class="text-center result">
+            <p id="egality" class="d-none noDisplay">Égalité !</p>
+            <p id="victory" class="d-none noDisplay">Victoire !</p>
+            <p id="defait" class="d-none noDisplay">Defaite !</p>
+        </div>
+
+        <!-- CHOIX DU JOUEUR -->
+        <div class="row justify-content-center choice">
+            <label for="Votre choix :"></label>
+            <select name="chifoumi" id="choice">
+                <option value="pierre">Pierre</option>
+                <option value="feuille">Feuille</option>
+                <option value="ciseaux">Ciseaux</option>
+            </select>
+        </div>
+
+        <!-- Résultat final -->
+        <div class="row mt-2 justify-content-center">
+            <h3 id="win" class="d-none noDisplay">Vous avez gagné la partie !</h3>
+            <h3 id="lose" class="d-none noDisplay">Vous avez perdu la partie !</h3>
+        </div>
+
+        <!-- BOUTON CHIFOUMI / RESET -->
+        <div class="raw button mt-2">
+            <div class="col-12 text-center">
+                <button id="launch">ChiFouMi ! </button>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-5 mb-5">
+                <button id="reset" class="d-none noDisplay">Recommencer</button>
+            </div>
+        </div>
+
+        <!-- Image gestion du son -->
+        <img src="assets/img/sound.png" alt="Speakers" width="50px" id="sound">
+    </div>
+    
+    <!-- SON DU SITE -->
+    <audio src="assets/sound/victory.mp3" id="applause">TEST</audio>
+    <audio src="assets/sound/battle.mp3" id="ost" allow="autoplay"></audio>
+
+    <!-- SCRIPT -->
+    <script src="assets/js/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

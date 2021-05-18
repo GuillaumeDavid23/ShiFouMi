@@ -9,9 +9,9 @@ var pcImage = document.getElementById("imgPC");
 var soundImg = document.getElementById("sound");
 
 //DECLARATION DES IMAGES
-var pierreImg = "assets/img/diamant.png"
-var feuilleImg = "assets/img/feuille.png"
-var ciseauxImg = "assets/img/ciseaux.png"
+var pierreImg = "assets/img/pokePierre.png"
+var feuilleImg = "assets/img/pokeFeuille.png"
+var ciseauxImg = "assets/img/pokeFeu.png"
 var sound = "assets/img/sound.png"
 var muted = "assets/img/muted.png"
 
@@ -129,13 +129,15 @@ const points = (count) =>{
 function countTotal(total){
     if (total == 1){
         win.classList.remove("d-none");
-        
+        document.getElementById("ost").pause();
+        document.getElementById("ost").currentTime = 0;
         document.getElementById("applause").play();
         launch.disabled = true;
         resetbtn.classList.remove("d-none");
     }
     else if (total == 2){
-        
+        document.getElementById("ost").pause();
+        document.getElementById("ost").currentTime = 0;
         lose.classList.remove("d-none");
         launch.disabled = true;
         resetbtn.classList.remove("d-none");
@@ -152,7 +154,8 @@ const NotDisplay = () =>{
 
 //RESET BUTTON
 $("#reset").click(function(){
-
+    document.getElementById("applause").pause();
+    document.getElementById("applause").currentTime = 0;
     //Point à zéro
     pcPoints = 0;
     userPoints = 0;

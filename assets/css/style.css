@@ -5,11 +5,16 @@ body {
     height: 100vh;
     position: relative;
 }
-
+/* INDEX */
+.ctnGeneral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* TITRE */
-.title {
+#titleIndex {
     font-family: 'New Tegomin', serif;
-    font-size: 3rem;
+    font-size: 6rem;
     text-align: center;
     text-shadow:
         -1px -1px 0 #fff,
@@ -19,6 +24,22 @@ body {
         1px 1px 20px #141414;
     color: rgb(46, 130, 179);
 }
+#playCtn{
+    padding: 0 25px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: blue;
+    
+}
+#playText:hover{
+    color: chocolate;
+    
+}
+#playText{
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
 
 
 /* COMPTEUR DE POINTS */
